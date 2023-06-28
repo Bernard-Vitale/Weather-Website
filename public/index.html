@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Weather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h3>The Weather App</h3>
+
+        <div id="search">
+            <input type="text" id="searchBar" placeholder="Enter a city">
+            <button id="searchBtn">
+                <img src="images/search.png" alt="Search Button">
+            </button>
+            <div id="errorMessage">
+                <p>Please enter a valid location.</p>
+            </div>
+        </div>
+
+        <button id="settings">
+            <img src="images/settings.png" alt="Settings Button" title="Settings">
+            <div class="content">
+                <h4 id="newLocation">Set Default Location</h4>
+                <h4>Unit:</h4>
+                <input type="radio" id="fahrenheit" name="temp" checked=""checked>
+                <label for="fahrenheit">°F</label>
+                <br>
+                <input type="radio" id="celsius" name="temp">
+                <label for="celsius">°C</label> 
+            </div>
+        </button>
+        
+        
+    </header>
+    
+    <main>
+
+        <div id="container">
+            <div id="basicInfo" class="cards">
+                    <div id="location">
+                        <h2>----</h2>
+                    </div>                
+                    <img id="weatherIcon" src="images/01d.png" alt="sunny" title="Sunny">
+
+                    <p id="temp">--°F</p>
+                    <p id="feelsLike">Feels Likes --°F</p>
+            </div>
+
+            <div id="locationSelector">
+                <h2>Enter a new default location:</h2>
+                <input type="text" placeholder="Enter a city" id="newLocationText" class="items"><br>
+                <p id="errorMessage2">Please enter a valid location.</p>
+                <p id="successMessage">Default location changed.</p>
+                <button class="items" id="submitBtn">Submit</button>
+                <button class="items" id="closeBtn">Close</button>
+            </div>
+
+            <div id="advancedInfo" class="cards">
+                <div id="minTemp" class="extraInfo">
+                    <img src="images/minTemp.png" alt="Sunrise Icon" style="color: white;">
+                    <p id="minTempText">--°F </p>
+                    <p>Min Temp</p>
+                
+                </div>
+
+                <div id="maxTemp" class="extraInfo">
+                    <img src="images/maxTemp.png" alt="Sunrise Icon" style="color: white;">
+                    <p id="maxTempText">--°F</p>
+                    <p>Max Temp</p>
+                    
+                </div>
+
+                <div id="humidity" class="extraInfo">
+                    <img src="images/humidity.png" alt="Humidity Icon">
+                    <p id="humidityText">--%</p>
+                    <p>Humidity</p>
+                </div>
+
+                <div id="wind" class="extraInfo">
+                    <img src="images/wind.png" alt="Wind Icon"><br>
+                    <p>Wind Speed:</p>
+                    <p id="windText">-- MPH</p>
+
+                </div>
+
+                <div id="sunrise" class="extraInfo">
+                    <img src="images/sunrise.png" alt="Sunrise Icon" style="color: white;">
+                    <p id="sunriseText">-:-- AM </p>
+                    <p>Sunrise</p>
+                </div>
+
+                <div id="sunset" class="extraInfo">
+                    <img src="images/sunset.png" alt="Sunset icon">
+                    <p id="sunsetText">-:-- PM </p>
+                    <p>Sunset</p>
+                </div>
+
+
+            </div>
+            </div>
+        </div>
+
+        <footer>
+            <a target="_blank" href="https://icons8.com/icon/FqwbwyKotRsD/sunrise">Icons</a> created by <a target="_blank" href="https://icons8.com">Icons8</a>            <p>&copy Copyright</p>
+        </footer>
+
+    </main>
+
+    
+    <script src="index.js"></script>
+    
+</body>
+</html>
