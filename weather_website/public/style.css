@@ -318,6 +318,10 @@ header #errorMessage{
     font-size: 1em;
 }
 
+.extraInfo{
+    display: block;
+}
+
 .extraInfo p{
     font-size: 1.3em;
     text-align: center;
@@ -380,6 +384,8 @@ header #errorMessage{
 
     display: block;
 }
+
+
 
 
 #sunset img, #sunrise img{
@@ -452,7 +458,12 @@ header #errorMessage{
         display: inline-block;
     }
 
-    #wind img, #minTemp img, #maxTemp img{
+    #wind{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #minTemp img, #maxTemp img{
         margin-left:15px;
     }
  
