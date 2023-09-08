@@ -6,7 +6,7 @@ const apiKey = process.env.API_KEY;
 
 const app = express();
 
-app.use(express.static('public'));
+app.use(express.static(__dirname + "/public/"));
 
 app.get('/api', async (request, response) => {
     const city = request.query.city;
