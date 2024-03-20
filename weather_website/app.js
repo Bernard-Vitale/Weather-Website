@@ -35,4 +35,5 @@ app.get('/api', async (request, response) => {
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
     console.log(`App listening on port ${port}.`);
+    console.log('The App will be running on http://localhost:3000');
 });
