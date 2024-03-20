@@ -15,7 +15,7 @@ In order to run the application there are only a couple steps:
  5) Lastly, http://localhost:3000 to view it in your browser.
 
 ## Tech Stack
-This application was build with:
+This application was built with:
   * Javascript
   * HTML
   * CSS
