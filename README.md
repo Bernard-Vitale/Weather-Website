@@ -1,5 +1,5 @@
 # Weather-Website
- This is a simple Weather Website that uses the OpenWeather API. This web application passes the city chosen by the user to an exprerss server. This server then queries the OpenWeather API to gather data about the weather of the designated city. This website has been deployed on Vercel and you can view the website [here](https://the-weather-app-dun.vercel.app/).
+ This is a simple Weather Website that uses the OpenWeather API. This web application passes the city chosen by the user to an exprerss server. This server then queries the OpenWeather API to gather data about the weather of the designated city. This website has been deployed on Vercel and you can view the website [here](https://the-weather-app-eight.vercel.app/).
 
 
 Here is a screenshot of the web application:
