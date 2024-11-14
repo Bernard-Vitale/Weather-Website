@@ -23,14 +23,18 @@ app.get('/api', async (request, response) => {
         response.status(404).json({error: "API Failed."});
         return;
     }else{
-        //If it succeeded snef back a success status code and the data from API
+        //If it succeeded send back a success status code and the data from API
         data = await apiResponse.json();
-        response.status(201).json(data);
+        response.status(200).json(data);
         return;
     }
 
 });
 
+
+app.use('*', (req, res) => {
+    res.redirect('/');
+});
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
